@@ -24,6 +24,8 @@ if(mysqli_num_rows($result)>0){
                 <div>
                     <p class='card-text'><b>Author:</b> {$row["author_fn"]} {$row["author_ln"]}</p>
                     <p class='card-text'><b>Publis Date:</b> {$row["publish_date"]}</p>
+                    <p class='card-text'><b>ISBN:</b> {$row["isbn"]}</p>
+
                 </div>
                 <div>
                     <a href='publisher.php?x={$row["publisher_name"]}' class='btn card-text'><b>Publisher:</b> {$row["publisher_name"]}</a>
